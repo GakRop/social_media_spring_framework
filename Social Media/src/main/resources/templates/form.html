@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Social Media</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Submission</h1>
+<form action = "#" th:action = "@{/socialmedia}" th:object = "${socialmedia}" method = "post">
+    <p>From: <input type = "text" th:field = "*{fromID}"/></p>
+    <p>To: <input type = "text" th:field = "*{toID}"/></p>
+    <p>Message: <input type = "text" th:field = "*{content}"/></p>
+    <p><input type = "submit" value = "Submit"/> <input type = "reset" value = "Reset"/></p>
+</form>
+</body>
+</html>

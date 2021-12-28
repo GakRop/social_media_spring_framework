@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Social Media</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Confirm</h1>
+<p th:text="'From: ' + ${socialmedia.fromID}"/>
+<p th:text="'To: ' + ${socialmedia.toID}"/>
+<p th:text="'content: ' + ${socialmedia.content}"/>
+<a href="/socialmedia">Submit another message</a>
+</body>
+</html>
